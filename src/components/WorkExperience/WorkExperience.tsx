@@ -50,7 +50,7 @@ const ExperienceItem: React.FC<Props> = ({ title, from, to, children }) => {
   const classes = useStyles();
   return (
     <div className={classes.experienceItem}>
-      <Typography className={classes.title} color="textSecondary" gutterBottom>
+      <Typography className={classes.title} gutterBottom>
         {title}
       </Typography>
       <List disablePadding dense>
@@ -74,7 +74,12 @@ const ExperienceItem: React.FC<Props> = ({ title, from, to, children }) => {
           />
         </ListItem>
       </List>
-      <Typography className={classes.description} variant="body2" component="p">
+      <Typography
+        className={classes.description}
+        color="textSecondary"
+        variant="body2"
+        component="p"
+      >
         {children}
       </Typography>
     </div>
@@ -106,7 +111,7 @@ const WorkExperience: React.FC = () => {
       </List>
       <div className={classes.experience}>
         <ExperienceItem
-          title="Senior Full Stack Web developer / https://www.gosolo.io"
+          title="Senior Full Stack Web developer / Solo"
           from="Dec, 2017"
           to="Current"
         >
@@ -120,7 +125,7 @@ const WorkExperience: React.FC = () => {
         </ExperienceItem>
         <Divider />
         <ExperienceItem
-          title="Senior Full Stack Web developer / https://www.grow.com"
+          title="Senior Full Stack Web developer / Grow"
           from="Feb, 2014"
           to="Nov, 2017"
         >
@@ -144,7 +149,7 @@ const WorkExperience: React.FC = () => {
         </ExperienceItem>
         <Divider />
         <ExperienceItem
-          title="Web developer / https://www.zagg.com"
+          title="Web developer / Zagg"
           from="Dec, 2010"
           to="Feb, 2013"
         >

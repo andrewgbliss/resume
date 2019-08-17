@@ -6,7 +6,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import WorkIcon from '@material-ui/icons/Work';
+import SchoolIcon from '@material-ui/icons/School';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 
 const useStyles = makeStyles(theme => ({
@@ -47,7 +47,7 @@ const EducationItem: React.FC<Props> = ({ title, from, to, description }) => {
   const classes = useStyles();
   return (
     <div className={classes.educationItem}>
-      <Typography className={classes.title} color="textSecondary" gutterBottom>
+      <Typography className={classes.title} gutterBottom>
         {title}
       </Typography>
       <List disablePadding dense>
@@ -71,7 +71,12 @@ const EducationItem: React.FC<Props> = ({ title, from, to, description }) => {
           />
         </ListItem>
       </List>
-      <Typography className={classes.description} variant="body2" component="p">
+      <Typography
+        className={classes.description}
+        color="textSecondary"
+        variant="body2"
+        component="p"
+      >
         {description}
       </Typography>
     </div>
@@ -89,7 +94,7 @@ const Education: React.FC = () => {
               root: classes.listItemIcon,
             }}
           >
-            <WorkIcon fontSize="large" />
+            <SchoolIcon fontSize="large" />
           </ListItemIcon>
           <ListItemText
             disableTypography

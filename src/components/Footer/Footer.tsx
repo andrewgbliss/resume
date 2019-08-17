@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(4),
     textAlign: 'center',
     backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
+    color: 'white',
   },
 }));
 
@@ -16,7 +16,6 @@ const Footer: React.FC = () => {
   return (
     <footer className={classes.root}>
       <Typography gutterBottom>andrewgbliss.com</Typography>
-      {/* <Typography gutterBottom>{new Date().toDateString()}</Typography> */}
     </footer>
   );
 };

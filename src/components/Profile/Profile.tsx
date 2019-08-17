@@ -11,13 +11,23 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import profileImg from 'assets/img/andrew.jpg';
+import logoImg from 'assets/img/logo.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    position: 'relative',
+  },
+  wrapper: {
     padding: theme.spacing(2),
   },
   profileImg: {
     width: '100%',
+  },
+  logoImg: {
+    width: 32,
+    position: 'absolute',
+    top: 10,
+    left: 10,
   },
   wordWrap: {
     wordWrap: 'break-word',
@@ -31,9 +41,10 @@ const useStyles = makeStyles(theme => ({
 const Profile: React.FC = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.root}>
       <img src={profileImg} alt="Andrew" className={classes.profileImg} />
-      <div className={classes.root}>
+      <img src={logoImg} alt="Logo" className={classes.logoImg} />
+      <div className={classes.wrapper}>
         <Typography variant="h5" gutterBottom>
           <Box fontWeight="fontWeightBold">Andrew G Bliss</Box>
         </Typography>
@@ -57,7 +68,7 @@ const Profile: React.FC = () => {
               disableTypography
               primary={
                 <Typography component="div" variant="body2">
-                  <Box fontWeight="fontWeightMedium">
+                  <Box fontWeight="fontWeightLight">
                     Senior Full Stack Web Developer
                   </Box>
                 </Typography>
@@ -76,7 +87,7 @@ const Profile: React.FC = () => {
               disableTypography
               primary={
                 <Typography component="div" variant="body2">
-                  <Box fontWeight="fontWeightMedium">Lehi, UT</Box>
+                  <Box fontWeight="fontWeightLight">Lehi, UT</Box>
                 </Typography>
               }
             />
@@ -93,9 +104,7 @@ const Profile: React.FC = () => {
               disableTypography
               primary={
                 <Typography component="div" variant="body2">
-                  <Box fontWeight="fontWeightMedium">
-                    andrewgbliss@gmail.com
-                  </Box>
+                  <Box fontWeight="fontWeightLight">andrewgbliss@gmail.com</Box>
                 </Typography>
               }
               classes={{
@@ -115,7 +124,7 @@ const Profile: React.FC = () => {
               disableTypography
               primary={
                 <Typography component="div" variant="body2">
-                  <Box fontWeight="fontWeightMedium">801.440.5615</Box>
+                  <Box fontWeight="fontWeightLight">801.440.5615</Box>
                 </Typography>
               }
             />

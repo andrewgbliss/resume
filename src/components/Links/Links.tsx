@@ -45,7 +45,7 @@ const LinkItem: React.FC<Props> = ({ href }) => {
             variant="body2"
             className={classes.wordWrap}
           >
-            <Box fontWeight="fontWeightMedium">
+            <Box fontWeight="fontWeightLight">
               <Link
                 target="_blank"
                 rel="noreferrer"
