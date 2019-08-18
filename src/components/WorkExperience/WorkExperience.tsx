@@ -111,21 +111,21 @@ const WorkExperience: React.FC = () => {
       </List>
       <div className={classes.experience}>
         <ExperienceItem
-          title="Senior Full Stack Web developer / Solo"
+          title="Senior Full Stack Web Developer / Nth-Child Consulting"
           from="Dec, 2017"
           to="Current"
         >
           Implemented Google Cloud services that saved the company thousands of
           dollars per month in hosting costs. Created scalable NodeJS Backend
           RESTful APIs hosted in Kubernetes, highly available React Frontend
-          hosted in Firebase, and an effiecent Postgres database. Sped up
+          hosted in Firebase, and an efficient Postgres database. Sped up
           development using Docker and deployments with CI / CD processes in
           Gitlab. Implemented real time web socket messaging for admin and
           customer service departments.
         </ExperienceItem>
         <Divider />
         <ExperienceItem
-          title="Senior Full Stack Web developer / Grow"
+          title="Senior Full Stack Web Developer / Grow"
           from="Feb, 2014"
           to="Nov, 2017"
         >
@@ -137,7 +137,7 @@ const WorkExperience: React.FC = () => {
         </ExperienceItem>
         <Divider />
         <ExperienceItem
-          title="Senior Full Stack Web developer / Media Rain"
+          title="Senior Full Stack Web Developer / Media Rain"
           from="Mar, 2013"
           to="Feb, 2014"
         >
@@ -149,38 +149,36 @@ const WorkExperience: React.FC = () => {
         </ExperienceItem>
         <Divider />
         <ExperienceItem
-          title="Web developer / Zagg"
+          title="Web Developer / Zagg"
           from="Dec, 2010"
           to="Feb, 2013"
         >
           Created APIs that would interface with 3rd party credit card APIs.
-          Authorize.net, Cybersource and Paypal. Created a PHP Backend system
+          Authorize.net, CyberSource and PayPal. Created a PHP Backend system
           that customer service could use to create discounts, offers, sales,
           and orders. Developed HTML5 Frontend features that made checkout
           processes faster.
         </ExperienceItem>
         <Divider />
         <ExperienceItem
-          title="Web developer / Classtop"
+          title="Web Developer / Classtop"
           from="Mar, 2008"
           to="Nov, 2010"
         >
           Maintained a C# application and a low cost efficient PHP application
           that interfaced with Facebook API's. The application was for
           classmates to connect with each on social media and take free courses
-          that colleges offered to the public. Skills used: C#, PHP, MySQL,
-          HTML, CSS, JQuery
+          that colleges offered to the public.
         </ExperienceItem>
         <Divider />
         <ExperienceItem
-          title="Web developer / Stevens-Henager College"
+          title="Web Developer / Stevens-Henager College"
           from="Apr, 2002"
           to="Oct, 2006"
         >
           Created and maintained many Coldfusion servers that processed student,
           financial, and admissions information. Implemented many tools in
-          reporting and scheduling that improved many admin processes. Skills
-          used: Coldfusion, Oracle, HTML, CSS, Javascript
+          reporting and scheduling that improved many admin processes.
         </ExperienceItem>
       </div>
     </div>
