@@ -86,6 +86,7 @@ const Skills: React.FC = () => {
       </List>
       <div className={classes.skills}>
         <Skill title="Responsive Web Design" value={80} />
+        <Skill title="Golang" value={55} />
         <Skill title="NodeJS" value={90} />
         <Skill title="React" value={85} />
         <Skill title="PostgreSQL" value={70} />

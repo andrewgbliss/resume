@@ -116,10 +116,10 @@ const WorkExperience: React.FC = () => {
           to="Current"
         >
           Implemented Google Cloud services that saved the company thousands of
-          dollars per month in hosting costs. Created scalable NodeJS Backend
-          RESTful APIs hosted in Kubernetes, highly available React Frontend
-          hosted in Firebase, and an efficient Postgres database. Sped up
-          development using Docker and deployments with CI / CD processes in
+          dollars per month in hosting costs. Created scalable NodeJS and Golang
+          Backend RESTful APIs hosted in Kubernetes, highly available React
+          Frontend hosted in Firebase, and an efficient Postgres database. Sped
+          up development using Docker and deployments with CI / CD processes in
           Gitlab. Implemented real time web socket messaging for admin and
           customer service departments.
         </ExperienceItem>
