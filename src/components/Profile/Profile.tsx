@@ -50,9 +50,9 @@ const Profile: React.FC = () => {
         </Typography>
         <Typography variant="caption" gutterBottom>
           <Box fontWeight="fontWeightLight">
-            Quality by design, building complex cloud applications with a solid
-            technical background, a keen eye for detail and a self motivated,
-            user-centered attitude.
+            Quality by design. Build complex cloud applications and beautiful
+            responsive user interfaces. Keen eye for detail and great user
+            experiences.
           </Box>
         </Typography>
         <List>

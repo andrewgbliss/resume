@@ -27,8 +27,10 @@ const Layout: React.FC = () => {
         <Paper className={classes.paper} elevation={6}>
           <Profile />
           <Divider />
-          <Skills />
-          <Languages />
+          <div className="no-print">
+            <Skills />
+            <Languages />
+          </div>
           <Divider />
           <Links />
         </Paper>

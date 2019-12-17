@@ -10,7 +10,9 @@ const App: React.FC = () => {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Layout />
-      <Footer />
+      <div className="no-print">
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 };

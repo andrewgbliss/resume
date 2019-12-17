@@ -42,7 +42,7 @@ const LinkItem: React.FC<Props> = ({ href }) => {
         primary={
           <Typography
             component="div"
-            variant="body2"
+            variant="caption"
             className={classes.wordWrap}
           >
             <Box fontWeight="fontWeightLight">
@@ -77,10 +77,12 @@ const Links: React.FC = () => {
       </Typography>
       <List>
         <LinkItem href="https://www.nthchildconsulting.com" />
-        <LinkItem href="https://medium.com/@nthchildconsulting" />
         <LinkItem href="http://www.github.com/andrewgbliss" />
         <LinkItem href="https://www.npmjs.com/~andrewgbliss" />
-        <LinkItem href="https://gitlab.com/sundry" />
+        <LinkItem href="https://medium.com/@andrewgbliss" />
+        <div className="no-print">
+          <LinkItem href="https://gitlab.com/sundry" />
+        </div>
         <LinkItem href="https://www.linkedin.com/in/andrewgbliss/" />
       </List>
     </div>

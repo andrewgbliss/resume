@@ -9,6 +9,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import WorkIcon from '@material-ui/icons/Work';
 import DateRangeIcon from '@material-ui/icons/DateRange';
+import Chip from '@material-ui/core/Chip';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles(theme => ({
   experience: {
@@ -43,10 +45,17 @@ interface Props {
   title: string;
   from: string;
   to: string;
+  skills: Array<string>;
   children: React.ReactNode;
 }
 
-const ExperienceItem: React.FC<Props> = ({ title, from, to, children }) => {
+const ExperienceItem: React.FC<Props> = ({
+  title,
+  from,
+  to,
+  skills,
+  children,
+}) => {
   const classes = useStyles();
   return (
     <div className={classes.experienceItem}>
@@ -82,6 +91,17 @@ const ExperienceItem: React.FC<Props> = ({ title, from, to, children }) => {
       >
         {children}
       </Typography>
+      <Box p={2}>
+        <Grid container>
+          {skills.map((skill: string) => (
+            <Grid item key={skill}>
+              <Box paddingTop={1} paddingRight={1}>
+                <Chip label={skill} />
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
     </div>
   );
 };
@@ -111,75 +131,84 @@ const WorkExperience: React.FC = () => {
       </List>
       <div className={classes.experience}>
         <ExperienceItem
-          title="Senior Full Stack Web Developer / Nth-Child Consulting"
+          title="Senior Full Stack Web Developer / Solo"
           from="Dec, 2017"
           to="Current"
+          skills={['React', 'Node', 'Postgres', 'Kubernetes']}
         >
-          Implemented Google Cloud services that saved the company thousands of
-          dollars per month in hosting costs. Created scalable NodeJS and Golang
-          Backend RESTful APIs hosted in Kubernetes, highly available React
-          Frontend hosted in Firebase, and an efficient Postgres database. Sped
-          up development using Docker and deployments with CI / CD processes in
-          Gitlab. Implemented real time web socket messaging for admin and
-          customer service departments.
+          Solo is a company that has built software for selling solar panels.
+          Migrated legacy PHP, MySQL systems to a React Frontend, Node Express
+          API Backend, Kubernetes cluster. Provided responsive web design in
+          printing solar proposals and realtime messaging bewteen sales
+          representatives. Planned and implemented Database backups, replicas,
+          caching. Introduced best practices, unit testing and CI / CD
+          pipelines.
         </ExperienceItem>
         <Divider />
         <ExperienceItem
           title="Senior Full Stack Web Developer / Grow"
           from="Feb, 2014"
           to="Nov, 2017"
+          skills={['React', 'Angular', 'Node', 'Postgres', 'AWS']}
         >
-          Implemented NodeJS RESTful APIs that connected to hundreds of 3rd
-          party data sources and APIs. Designed a Postgres data warehouse that
-          was scalable and handled huge workloads. Created the React dashboard
-          Frontend that would connect in real time to provide business
-          intelligence.
+          Grow is a company that collects data from many APIs and displays in
+          beautiful charts, business intelligences dashboards. Implemented
+          NodeJS RESTful APIs that connected to hundreds of 3rd party data
+          sources and APIs. Designed a scalable Postgres data warehouse. Created
+          the React dashboard Frontend that would connect in real time to
+          provide business intelligence.
         </ExperienceItem>
-        <Divider />
-        <ExperienceItem
-          title="Senior Full Stack Web Developer / Media Rain"
-          from="Mar, 2013"
-          to="Feb, 2014"
-        >
-          Created a PHP RESTful API in CakePHP that would interface with School
-          Specialty, Clever, SES, and Twilio API's. SaaS application would
-          deliver alerts to students about events. Students, Teachers and Admins
-          could use this app to display calendar information and course
-          instruction that could be used offline.
-        </ExperienceItem>
-        <Divider />
-        <ExperienceItem
-          title="Web Developer / Zagg"
-          from="Dec, 2010"
-          to="Feb, 2013"
-        >
-          Created APIs that would interface with 3rd party credit card APIs.
-          Authorize.net, CyberSource and PayPal. Created a PHP Backend system
-          that customer service could use to create discounts, offers, sales,
-          and orders. Developed HTML5 Frontend features that made checkout
-          processes faster.
-        </ExperienceItem>
-        <Divider />
-        <ExperienceItem
-          title="Web Developer / Classtop"
-          from="Mar, 2008"
-          to="Nov, 2010"
-        >
-          Maintained a C# application and a low cost efficient PHP application
-          that interfaced with Facebook API's. The application was for
-          classmates to connect with each on social media and take free courses
-          that colleges offered to the public.
-        </ExperienceItem>
-        <Divider />
-        <ExperienceItem
-          title="Web Developer / Stevens-Henager College"
-          from="Apr, 2002"
-          to="Oct, 2006"
-        >
-          Created and maintained many Coldfusion servers that processed student,
-          financial, and admissions information. Implemented many tools in
-          reporting and scheduling that improved many admin processes.
-        </ExperienceItem>
+        <div className="no-print">
+          <ExperienceItem
+            title="Senior Full Stack Web Developer / Media Rain"
+            from="Mar, 2013"
+            to="Feb, 2014"
+            skills={['PHP', 'MySQL', 'Angular', 'HTML', 'CSS']}
+          >
+            Created a PHP RESTful API in CakePHP that would interface with
+            School Specialty, Clever, SES, and Twilio API's. SaaS application
+            would deliver alerts to students about events. Students, Teachers
+            and Admins could use this app to display calendar information and
+            course instruction that could be used offline.
+          </ExperienceItem>
+          <Divider />
+          <ExperienceItem
+            title="Web Developer / Zagg"
+            from="Dec, 2010"
+            to="Feb, 2013"
+            skills={['PHP', 'MySQL', 'Javascript', 'HTML', 'CSS']}
+          >
+            Created APIs that would interface with 3rd party credit card APIs.
+            Authorize.net, CyberSource and PayPal. Created a PHP Backend system
+            that customer service could use to create discounts, offers, sales,
+            and orders. Developed HTML5 Frontend features that made checkout
+            processes faster.
+          </ExperienceItem>
+          <Divider />
+          <ExperienceItem
+            title="Web Developer / Classtop"
+            from="Mar, 2008"
+            to="Nov, 2010"
+            skills={['PHP', 'MySQL', 'Javascript', 'HTML', 'CSS']}
+          >
+            Maintained a C# application and a low cost efficient PHP application
+            that interfaced with Facebook API's. The application was for
+            classmates to connect with each on social media and take free
+            courses that colleges offered to the public.
+          </ExperienceItem>
+          <Divider />
+          <ExperienceItem
+            title="Web Developer / Stevens-Henager College"
+            from="Apr, 2002"
+            to="Oct, 2006"
+            skills={['Coldfusion', 'Oracle', 'Javascript', 'HTML', 'CSS']}
+          >
+            Created and maintained many Coldfusion servers that processed
+            student, financial, and admissions information. Implemented many
+            tools in reporting and scheduling that improved many admin
+            processes.
+          </ExperienceItem>
+        </div>
       </div>
     </div>
   );
