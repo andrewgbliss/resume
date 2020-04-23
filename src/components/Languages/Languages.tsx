@@ -10,7 +10,7 @@ const Languages: React.FC = () => {
       <ListHeader title="Languages" icon={<TranslateIcon />} />
       <Box paddingLeft={2} paddingRight={2} paddingBottom={4}>
         <Language title="English" value={100} />
-        <Language title="Japanese" value={40} />
+        <Language title="Japanese" value={60} />
       </Box>
     </>
   );

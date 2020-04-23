@@ -136,13 +136,15 @@ const WorkExperience: React.FC = () => {
           to="Current"
           skills={['React', 'Node', 'Postgres', 'Kubernetes']}
         >
-          Solo is a company that has built software for selling solar panels.
-          Migrated legacy PHP, MySQL systems to a React Frontend, Node Express
-          API Backend, Kubernetes cluster. Provided responsive web design in
-          printing solar proposals and realtime messaging bewteen sales
-          representatives. Planned and implemented Database backups, replicas,
-          caching. Introduced best practices, unit testing and CI / CD
-          pipelines.
+          Solo is a CRM platform for clients to sell solar and roofing panels.
+          Migrated legacy PHP, MySQL systems to a React, Node, Postgres stack,
+          saving the company thousands of dollars in scaling issues. Refactored
+          UI to a responsive web design. Implemented realtime socket messaging
+          bewteen sales representatives to improve sales. Planned and
+          implemented database backups, replicas, caching. Introduced best
+          practices, unit testing and CI / CD pipelines. Created a financial
+          system to allow auto generating of invoices, saving many tedious
+          hours, speeding up client payments, and increasing company income.
         </ExperienceItem>
         <Divider />
         <ExperienceItem
@@ -151,12 +153,12 @@ const WorkExperience: React.FC = () => {
           to="Nov, 2017"
           skills={['React', 'Angular', 'Node', 'Postgres', 'AWS']}
         >
-          Grow is a company that collects data from many APIs and displays in
-          beautiful charts, business intelligences dashboards. Implemented
-          NodeJS RESTful APIs that connected to hundreds of 3rd party data
-          sources and APIs. Designed a scalable Postgres data warehouse. Created
-          the React dashboard Frontend that would connect in real time to
-          provide business intelligence.
+          Grow is a company that collects data from APIs and displays metrics in
+          business intelligences dashboards. Implemented NodeJS RESTful APIs
+          that connected to hundreds of 3rd party data sources. Designed
+          scalable Postgres data warehouses. Created the React dashboard
+          frontend that would connect in real time to provide business
+          intelligence.
         </ExperienceItem>
         <div className="no-print">
           <ExperienceItem
@@ -167,9 +169,9 @@ const WorkExperience: React.FC = () => {
           >
             Created a PHP RESTful API in CakePHP that would interface with
             School Specialty, Clever, SES, and Twilio API's. SaaS application
-            would deliver alerts to students about events. Students, Teachers
-            and Admins could use this app to display calendar information and
-            course instruction that could be used offline.
+            would deliver alerts, emails and texts, to students about events.
+            Students, Teachers and Admins could use this app to display calendar
+            information and course instruction that could be used offline.
           </ExperienceItem>
           <Divider />
           <ExperienceItem
@@ -194,7 +196,9 @@ const WorkExperience: React.FC = () => {
             Maintained a C# application and a low cost efficient PHP application
             that interfaced with Facebook API's. The application was for
             classmates to connect with each on social media and take free
-            courses that colleges offered to the public.
+            courses that colleges offered to the public. Implemented server
+            scaling as we found out that many connections would become processor
+            intensive.
           </ExperienceItem>
           <Divider />
           <ExperienceItem

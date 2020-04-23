@@ -10,7 +10,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import profileImg from 'assets/img/andrew2.png';
+import profileImg from 'assets/img/andy.jpg';
 import logoImg from 'assets/img/logo.png';
 
 const useStyles = makeStyles(theme => ({
@@ -50,8 +50,9 @@ const Profile: React.FC = () => {
         </Typography>
         <Typography variant="caption" gutterBottom>
           <Box fontWeight="fontWeightLight">
-            Quality by design. Build complex cloud applications and beautiful
-            responsive user interfaces. Keen eye for detail and great user
+            Senior full stack web developer with 15 plus years of professional
+            experience. Current stack is React, Express, Node, and Postgres.
+            Motto is quality by having a keen eye for detail and responsive user
             experiences.
           </Box>
         </Typography>

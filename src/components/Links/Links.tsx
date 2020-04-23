@@ -76,14 +76,13 @@ const Links: React.FC = () => {
         </Box>
       </Typography>
       <List>
-        <LinkItem href="https://www.nthchildconsulting.com" />
         <LinkItem href="http://www.github.com/andrewgbliss" />
         <LinkItem href="https://www.npmjs.com/~andrewgbliss" />
         <LinkItem href="https://medium.com/@andrewgbliss" />
         <div className="no-print">
           <LinkItem href="https://gitlab.com/sundry" />
+          <LinkItem href="https://www.linkedin.com/in/andrewgbliss/" />
         </div>
-        <LinkItem href="https://www.linkedin.com/in/andrewgbliss/" />
       </List>
     </div>
   );

@@ -9,13 +9,12 @@ const Skills: React.FC = () => {
     <>
       <ListHeader title="Skills" icon={<GamePadIcon />} />
       <Box paddingLeft={2} paddingRight={2}>
-        <Skill title="React" value={80} />
-        <Skill title="Node" value={85} />
-        <Skill title="Javascript" value={90} />
-        <Skill title="PostgreSQL" value={70} />
-        <Skill title="Kubernetes" value={60} />
-        <Skill title="HTML" value={85} />
-        <Skill title="CSS" value={75} />
+        <Skill title="React" value={85} />
+        <Skill title="Node" value={90} />
+        <Skill title="Javascript" value={95} />
+        <Skill title="PostgreSQL" value={75} />
+        <Skill title="Kubernetes" value={70} />
+        <Skill title="Responsive UI" value={85} />
       </Box>
     </>
   );
